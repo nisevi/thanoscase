@@ -1,0 +1,48 @@
+version: 2.1
+
+commands:
+  cached-bundle:
+    steps:
+      # Restore bundle cache
+      - restore_cache:
+          keys:
+            - rails-bundle-{{ checksum "Gemfile.lock" }}
+            - rails-bundle-
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      # Store bundle cache
+      - save_cache:
+          key: rails-bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+  rspec-tests:
+    steps:
+      # Run rspec in parallel
+      - run: |
+          bundle exec rspec \
+          --profile 10 \
+          --format progress \
+          $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
+
+executors:
+  ruby260-pg969:
+    docker:
+      - image: circleci/ruby:2.6.2
+        environment:
+          BUNDLE_JOBS: 3
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundle
+jobs:
+  build:
+    working_directory: ~/app
+    executor: ruby260-pg969
+    steps:
+      - checkout
+      - cached-bundle
+      - rspec-tests
+
+workflows:
+  main:
+    jobs:
+      - build
