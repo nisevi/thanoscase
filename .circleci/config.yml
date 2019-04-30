@@ -14,7 +14,6 @@ commands:
             - vendor/bundle
   rspec-tests:
     steps:
-      # Run rspec in parallel
       - run: |
           bundle exec rspec \
           --profile 10 \
@@ -22,7 +21,7 @@ commands:
           $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
 
 executors:
-  ruby260-pg969:
+  ruby-2-6-2:
     docker:
       - image: circleci/ruby:2.6.2
         environment:
@@ -32,7 +31,7 @@ executors:
 jobs:
   build:
     working_directory: ~/app
-    executor: ruby260-pg969
+    executor: ruby-2-6-2
     steps:
       - checkout
       - cached-bundle

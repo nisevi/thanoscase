@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version       = "0.0.1"
   s.date          = "2019-04-27"
   s.summary       = "Thanos gem"
-  s.description   = "Randomly wipes out half the characters of a string."
+  s.description   = "Randomly removes half the characters of a given string."
   s.authors       = ["Nicolas Sebastian Vidal"]
   s.email         = "nicolas.s.vidal@gmail.com"
   s.homepage      = "https://github.com/nisevi/thanoscase"
