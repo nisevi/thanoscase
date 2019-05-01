@@ -7,7 +7,7 @@ Wipes out your strings from the universe
 In your gemfile:
 
 ```ruby
-gem 'thanoscase', '~> 0.0.1'
+gem 'thanoscase'
 ``` 
 
 or in the console:
