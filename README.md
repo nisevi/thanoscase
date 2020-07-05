@@ -1,6 +1,5 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/maintainability)](https://codeclimate.com/github/nisevi/thanoscase/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/test_coverage)](https://codeclimate.com/github/nisevi/thanoscase/test_coverage) [![Build Status](https://semaphoreci.com/api/v1/nisevi/thanoscase/branches/master/shields_badge.svg)](https://semaphoreci.com/nisevi/thanoscase)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnisevi%2Fthanoscase.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnisevi%2Fthanoscase?ref=badge_shield)
- [![Gem Version](https://badge.fury.io/rb/thanoscase.svg)](https://badge.fury.io/rb/thanoscase) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/maintainability)](https://codeclimate.com/github/nisevi/thanoscase/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/test_coverage)](https://codeclimate.com/github/nisevi/thanoscase/test_coverage) [![Build Status](https://semaphoreci.com/api/v1/nisevi/thanoscase/branches/master/shields_badge.svg)](https://semaphoreci.com/nisevi/thanoscase) [![Gem Version](https://badge.fury.io/rb/thanoscase.svg)](https://badge.fury.io/rb/thanoscase) 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnisevi%2Fthanoscase.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnisevi%2Fthanoscase?ref=badge_shield) 
 
 # Thanoscase
 
