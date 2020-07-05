@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/maintainability)](https://codeclimate.com/github/nisevi/thanoscase/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e44605df0cb27199d63f/test_coverage)](https://codeclimate.com/github/nisevi/thanoscase/test_coverage) [![Build Status](https://semaphoreci.com/api/v1/nisevi/thanoscase/branches/master/shields_badge.svg)](https://semaphoreci.com/nisevi/thanoscase)
+ [![Gem Version](https://badge.fury.io/rb/thanoscase.svg)](https://badge.fury.io/rb/thanoscase) 
+
 # Thanoscase
 
 Wipes out your strings from the universe

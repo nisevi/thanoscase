@@ -1,1 +1,8 @@
+.DS_Store
+results.html
+pkg
+html
+.idea
+.byebug_history
+coverage
 *.gem
